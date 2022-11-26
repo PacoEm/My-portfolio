@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "font menu";
+    src: url(./assets/fonts/Prata/Prata-Regular.ttf);
+    /* src: url(./assets/fonts/Cinzel/static/Cinzel-Medium.ttf); */
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+
+    background: #000;
+}
+
+/* ============================ */
+/* -------- down SECTION -------- */
+/* ============================ */
+#section_down{
+    /* flex */
+    display: flex;
+    flex-direction: column-reverse;
+
+    width: 100vw;
+    height: 50vh;
+
+    background: rgb(64, 64, 64);
+}
+#title_down{
+    margin: auto;
+
+    /* font */
+    font-family: "font menu";
+    font-size: calc(0.3rem + 2vw);
+    font-weight: bolder;
+    color: black;
+
+    /* reverse effect */
+     transform: scaleY(-1);
+
+}
+#menu_down{
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 90vw;
+    height: 25vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background: rgb(88, 88, 88);
+}
+.item_down{
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* reverse effect */
+    transform: scaleY(-1);
+
+    width: 30%;
+    height: 100px;
+
+    background: rgb(120, 120, 120);
+}
+.item_down a{
+    /* font */
+    font-family: "font menu";
+    font-size: calc(0.3rem + 2vw);
+    font-weight: bolder;
+    color: black;
+
+    text-decoration: none;
+}
+#separation{
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+}
