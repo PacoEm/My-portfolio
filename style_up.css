@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "font menu";
-    src: url(./assets/fonts/Prata/Prata-Regular.ttf);
-    /* src: url(./assets/fonts/Cinzel/static/Cinzel-Medium.ttf); */
+    font-family: myfont;
+    src: url(./assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf);
 }
 *{
     padding: 0;
@@ -24,18 +23,16 @@ header{
     flex-direction: column;
 
     width: 100vw;
-    height: 50vh;
+    height: 65vh;
 
-    background: grey;
+    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(5, 5, 5));
 }
 #title_up{
     margin: auto;
 
-        /* font */
-        font-family: "font menu";
-        font-size: calc(0.3rem + 2vw);
-        font-weight: bolder;
-        color: black;
+    /* font */
+    font-family: myfont, serif;
+    font-size: calc(0.3rem + 2vw);
 }
 #menu_up{
     /* flex */
@@ -46,33 +43,44 @@ header{
 
     width: 90vw;
     height: 25vh;
+    margin-top: -40px;
     margin-left: 50%;
     transform: translateX(-50%);
-
-    background: silver;
 }
 .item_up{
     /* flex */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
     width: 30%;
     height: 100px;
-
-    background: rgb(221, 221, 221);
 }
 .item_up a{
     /* font */
-    font-family: "font menu";
+    font-family: myfont, serif;
     font-size: calc(0.3rem + 2vw);
     font-weight: bolder;
-    color: black;
 
     text-decoration: none;
 }
-#separation{
-    width: 100vw;
+#separations_container{
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    width: 90%;
+    margin: auto;
+}
+.separation{
+    width: 33%;
     height: 1px;
-    background-color: white;
+    background: linear-gradient(100deg, black, rgba(255, 255, 255, 0.4), black);
+    opacity: 0.6;
+}
+
+/* h1, links */
+#section_up h1, #section_up a{
+    color: rgb(252, 252, 242);
 }
