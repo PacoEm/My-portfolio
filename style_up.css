@@ -35,6 +35,8 @@ header{
     /* font */
     font-family: myfont, serif;
     font-size: calc(0.3rem + 2vw);
+
+    opacity: 0;
 }
 #menu_up{
     /* flex */
@@ -86,3 +88,13 @@ header{
 #section_up h1, #section_up a{
     color: rgb(252, 252, 242);
 }
+
+/* animations */
+.linkup{
+    transform: translateY(50px);
+}
+.linkuptrans{
+    transition: 2s ease;
+    transition-property: transform;
+    transform: translateY(0px);
+  }
