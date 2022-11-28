@@ -24,6 +24,7 @@ header{
 
     width: 100vw;
     height: 35vh;
+    overflow: hidden;
 
     background: rgb(0, 0, 0);
 }
@@ -53,8 +54,11 @@ header{
 
     width: 90vw;
     height: 25vh;
+    min-height: 90px;
     margin-left: 50%;
     transform: translateX(-50%);
+
+    /* background: silver; */
 }
 .item_down{
     /* flex */
