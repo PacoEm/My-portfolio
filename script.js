@@ -6,9 +6,12 @@ const titleDown = document.getElementById("title_down");
 
 const linksUp = document.querySelectorAll(".linkup");
 const linksDown = document.querySelectorAll(".linkdown");
+const separation = document.getElementById("separations_container");
 
 // title opacity time transition
 const TITLE_TIME = 3;
+// separations opacity time transition
+const SEP_TIME = 2;
 
 window.addEventListener("load", () => {
   // title
@@ -29,4 +32,9 @@ window.addEventListener("load", () => {
   for (i = 0; i < linksDown.length; i += 1) {
     linksDown[i].className = "linkdowntrans";
   }
+
+  // separation appearence
+  separation.style.transition = SEP_TIME + "s ease";
+  separation.style.transitionProperty = "opacity";
+  separation.style.opacity = "1";
 });
