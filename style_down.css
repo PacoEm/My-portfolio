@@ -25,6 +25,7 @@ header{
     width: 100vw;
     height: 35vh;
     overflow: hidden;
+    min-height: 250px;
 
     background: rgb(0, 0, 0);
 }
@@ -84,6 +85,7 @@ header{
     position: absolute;
     width: 100vw;
     height: 35vh;
+    min-height: 250px;
 
     background: url(./assets/bacgrounds/ground_2.png) no-repeat;
     background-position-x: top;
