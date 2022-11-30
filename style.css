@@ -1,0 +1,40 @@
+@font-face {
+    font-family: myfont;
+    src: url(./assets/fonts/Playfair_Display_SC/PlayfairDisplaySC-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    width: 300vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+#container_up{
+    z-index: 0;
+    position: absolute;
+
+    width: 300vw;
+    height: 65vh;
+
+    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(5, 5, 5));
+
+}
+#container_down{
+    z-index: 1;
+    position: absolute;
+
+    width: 300vw;
+    height: 35vh;
+    transform: translateY(65vh);
+
+    background: url(./assets/bacgrounds/ground_2.png) repeat-x;
+    opacity: 0.6;
+
+}
+header{
+    width: 100vw;
+    height: 100vh;
+}

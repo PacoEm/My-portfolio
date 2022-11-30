@@ -21,7 +21,7 @@ function CallIndex() {
     //   title reflection
     titleDown.style.transition = TITLE_TIME + "s ease";
     titleDown.style.transitionProperty = "opacity";
-    titleDown.style.opacity = "1";
+    titleDown.style.opacity = "0.6";
 
     // dev link appearance
     for (i = 0; i < linksUp.length; i += 1) {
