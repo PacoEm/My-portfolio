@@ -8,15 +8,17 @@
     box-sizing: 0;
 }
 body{
-    width: 300vw;
+    width: 100vw;
     height: 100vh;
+    overflow: hidden;
+
     background: rgb(0, 0, 0);
 }
 #container_up{
     z-index: 0;
     position: absolute;
 
-    width: 300vw;
+    width: 100vw;
     height: 65vh;
 
     background: linear-gradient(180deg, rgb(37, 37, 37), rgb(5, 5, 5));
@@ -26,7 +28,7 @@ body{
     z-index: 1;
     position: absolute;
 
-    width: 300vw;
+    width: 100vw;
     height: 35vh;
     transform: translateY(65vh);
 
