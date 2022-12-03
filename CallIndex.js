@@ -43,28 +43,17 @@ function CallIndex() {
     separation.style.opacity = "1";
   });
 
-  dev.addEventListener("click", () => {
-    head.style.transform = "translateX(100vw)";
-    head.style.transition = "2s ease";
-    head.style.transitionProperty = "translateX()";
-
-    devsect.style.transform = "translateX(0px)";
-    devsect.style.transition = "2s ease";
-    devsect.style.transitionProperty = "translateX()";
-  });
-
+  // reset the rtansitions when resizing
   window.addEventListener(
     "resize",
     function (event) {
       head.style.transition = "none";
-      devsect.style.transition = "none";
     },
     true
   );
   window.onresize = ResetTransition();
   function ResetTransition() {
     head.style.transition = "none";
-    devsect.style.transition = "none";
   }
 }
 

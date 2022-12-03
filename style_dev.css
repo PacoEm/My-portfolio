@@ -1,80 +1,96 @@
-#dev_section_container{
-    z-index: 2;
-    position: absolute;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-
+#section_dev{
     width: 100vw;
-    height: 100vh;
 
-    transform: translateX(-100vw);
-
-    background: rgb(55, 40, 40);
+    background-color: black;
 }
-
-#dev_section{
-    z-index: 2;
-
+#sites{
     /* flex */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    width: 90%;
-    height: 90%;
-
-    background: rgb(14, 64, 64);
-}
-.title{
-    z-index: 3;
     
-    /* font */
+    width: 100vw;
+}
+.site{
+    /* flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 88vw;
+    max-width: 1300px;
+    aspect-ratio: 10/3;
+
+    margin: 40px 0px;
+    padding: 14px 0px;
+
+    border-radius: 5px;
+} 
+.img_site{
+    width: 50%;
+    height: 100%;
+
+    border: 1px solid rgba(94, 94, 94, 0.492);
+    box-shadow: 5px 5px 5px rgba(139, 136, 136, 0.606);
+    border-radius: 5px;
+}
+.description_site{
+    width: 50%;
+    height: 100%;
+
+}
+#site_2{
+    flex-direction: row-reverse;
+}
+
+/* images */
+#site_1 .img_site{
+    background: url(./assets/bacgrounds/bonne-conduite.jpg) center/cover no-repeat;
+}
+#site_2 .img_site{
+    background: url(./assets/bacgrounds/latelier.jpg) center/cover no-repeat;
+}
+#site_3 .img_site{
+    background: url(./assets/bacgrounds/carousselambra.jpg) center/cover no-repeat;
+}
+
+/* texts */
+#section_dev h1, #sites h2{
     font-family: myfont, serif;
-    font-size: calc(0.3rem + 2vw);
-    color: rgb(252, 252, 242);
-    /* opacity: 0; */
 }
-#dev_img_container{
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    width: 60vw;
-    height: 35vw;
-
-    border: 1px solid white;
-    background: rgb(85, 84, 84);
+#section_dev h1{
+    font-size: calc(0.9rem + 2vw);
+    text-align: center;
+    padding: 10px 0px 30px 0px;
 }
-.project{
-    width: 30%;
-    height: 20%;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background: grey;
+.date{
+    font-family: mytext, serif;
 }
-.img_project{
-    width: 90%;
-    height: 60%;
-
-    background: silver;
+#sites h2{
+    font-size: calc(0.2rem + 1.8vw);
 }
-.description{
-    width: 90%;
-    height: 30%;
+#sites p{
+    font-family: mytext, serif;
+    font-size: calc(0.3rem + 1.2vw);
+    text-align: justify;
+}
+.linksite{
+    display: block;
+    margin-top: 3%;
+    color: black;
 
-    background: teal;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+#site_1 .description_site, #site_3 .description_site{
+    padding: 0px 0px 0px 20px;
+}
+#site_2 .description_site p, #site_2 .description_site h2{
+    padding: 0px 20px 0px 0px;
+    text-align: right;
+}
+.description_site span{
+    font-weight: bold;
 }

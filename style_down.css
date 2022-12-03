@@ -8,7 +8,9 @@
     flex-direction: column-reverse;
 
     width: 100vw;
-    height: 35vh;
+    height: 40vh;
+
+    background: black;
 }
 #title_down{
     margin: auto;
@@ -24,7 +26,7 @@
      opacity: 0;
 
      color: rgba(107, 106, 106, 0);
-     text-shadow: 0px 0px 20px rgb(255, 255, 255);
+     text-shadow: 0px 0px 25px rgb(255, 255, 255);
 }
 #menu_down{
     /* flex */
@@ -34,7 +36,7 @@
     align-items: flex-start;
 
     width: 90vw;
-    height: 25vh;
+    height: 100px;
     margin-left: 50%;
     transform: translateX(-50%);
     overflow: hidden;
@@ -64,7 +66,7 @@
 /* h1, links */
 #section_down a{
     color: rgba(107, 106, 106, 0.221);
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.974);
+    text-shadow: 0px 0px 10px rgba(219, 219, 219, 0.974);
 }
 
 /* animations */
