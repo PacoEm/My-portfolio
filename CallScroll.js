@@ -2,13 +2,14 @@ const devsect = document.getElementById("section_dev");
 
 function CallScroll() {
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-    if (window.scrollY > 400) {
-      devsect.style.backgroundColor = "beige";
-      devsect.style.transition = "1.5s ease";
-    } else if (window.scrollY < 400) {
+    if (window.scrollY > 600) {
+      devsect.style.backgroundColor = "rgb(240, 235, 235)";
+      devsect.style.color = "rgb(41, 38, 38)";
+      devsect.style.transition = "3s ease";
+    } else if (window.scrollY < 600) {
       devsect.style.backgroundColor = "black";
-      devsect.style.transition = "1.5s ease";
+      devsect.style.color = "beige";
+      devsect.style.transition = "3s ease";
     }
   });
 
