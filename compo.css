@@ -1,0 +1,53 @@
+#section_compo{
+    width: 100vw;
+
+    background: black;
+}
+#section_compo div{
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+.single{
+    /* flex */
+    display: flex;
+    flex-direction: column;
+
+    padding: 3% 0px;
+}
+.single p{
+    font-family: mytext, serif;
+    font-size: calc(0.7rem + 1vw);
+    margin-bottom: 2%;
+}
+.single a{
+    padding-top: 1%;
+
+    font-family: mytext, serif;
+    font-size: calc(0.6rem + 0.7vw);
+
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+
+    color: beige;
+}
+.single audio{
+    width: 60%;
+    height: 35px;
+}
+
+/* colors and details */
+#compo_h1{
+    color: beige;
+}
+.single p{
+    color: rgb(202, 202, 187);
+}
+.single a{
+    color: rgb(217, 217, 177);
+}

@@ -13,7 +13,7 @@ function CallClassic() {
   ];
 
   // the display's duration for each image
-  const DURATION = 5;
+  const DURATION = 6;
 
   // the transition's duration
   const TRANSITION = 2;

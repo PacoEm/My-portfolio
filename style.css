@@ -39,3 +39,6 @@ header{
     width: 100vw;
     height: 100vh;
 }
+#section_dev h1, #linkClassic h1, #sites h2{
+    font-family: myfont, serif;
+}
