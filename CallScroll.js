@@ -3,7 +3,12 @@ const title1 = document.getElementById("title1");
 const title2 = document.getElementById("title2");
 const title3 = document.getElementById("title3");
 const title4 = document.getElementById("title4");
+const stylezic1 = document.getElementById("stylezic1");
+const stylezic2 = document.getElementById("stylezic2");
+const stylezic3 = document.getElementById("stylezic3");
+const stylezic4 = document.getElementById("stylezic4");
 const compoh1 = document.getElementById("compo_h1");
+console.log(stylezic1);
 
 function CallScroll() {
   window.addEventListener("scroll", () => {
@@ -11,8 +16,8 @@ function CallScroll() {
     let Y_TITLE2 = compoh1.offsetTop - window.innerHeight / 1.5;
     let Y_TITLE3 = compoh1.offsetTop - window.innerHeight / 1.7;
     let Y_TITLE4 = compoh1.offsetTop - window.innerHeight / 1.9;
+    const APP_TIME = 1;
 
-    console.log(window.scrollY + " / " + title1.offsetTop);
     // -------------------------------------
     // scroll section dévelloppement
     // -------------------------------------
@@ -36,44 +41,60 @@ function CallScroll() {
     if (window.scrollY > Y_TITLE1) {
       title1.style.width = "60%";
       title1.style.transition = "0.5s ease";
-      // title1.style.opacity = "0";
+
+      stylezic1.style.opacity = "1";
+      stylezic1.style.transition = APP_TIME + "s ease";
     } else if (window.scrollY < Y_TITLE1) {
       title1.style.width = "0%";
       title1.style.transition = "0.5s ease";
-      // title1.style.opacity = "1";
+
+      stylezic1.style.opacity = "0";
+      stylezic1.style.transition = "0.5s ease";
     }
 
     // scroll title2
     if (window.scrollY > Y_TITLE2) {
       title2.style.width = "60%";
       title2.style.transition = "0.5s ease";
-      // title1.style.opacity = "0";
+
+      stylezic2.style.opacity = "1";
+      stylezic2.style.transition = APP_TIME + "s ease";
     } else if (window.scrollY < Y_TITLE2) {
       title2.style.width = "0%";
       title2.style.transition = "0.5s ease";
-      // title1.style.opacity = "1";
+
+      stylezic2.style.opacity = "0";
+      stylezic2.style.transition = "0.5s ease";
     }
 
     // scroll title3
     if (window.scrollY > Y_TITLE3) {
       title3.style.width = "60%";
       title3.style.transition = "0.5s ease";
-      // title1.style.opacity = "0";
+
+      stylezic3.style.opacity = "1";
+      stylezic3.style.transition = APP_TIME + "s ease";
     } else if (window.scrollY < Y_TITLE3) {
       title3.style.width = "0%";
       title3.style.transition = "0.5s ease";
-      title1.style.opacity = "1";
+
+      stylezic3.style.opacity = "0";
+      stylezic3.style.transition = "0.5s ease";
     }
 
     // scroll title4
     if (window.scrollY > Y_TITLE4) {
       title4.style.width = "60%";
       title4.style.transition = "0.5s ease";
-      // title1.style.opacity = "0";
+
+      stylezic4.style.opacity = "1";
+      stylezic4.style.transition = APP_TIME + "s ease";
     } else if (window.scrollY < Y_TITLE4) {
       title4.style.width = "0%";
       title4.style.transition = "0.5s ease";
-      title1.style.opacity = "1";
+
+      stylezic4.style.opacity = "0";
+      stylezic4.style.transition = "0.5s ease";
     }
   });
 
@@ -85,12 +106,20 @@ function CallScroll() {
     "resize",
     function (event) {
       devsect.style.transition = "none";
+      stylezic1.style.transition = "none";
+      stylezic2.style.transition = "none";
+      stylezic3.style.transition = "none";
+      stylezic4.style.transition = "none";
     },
     true
   );
   window.onresize = ResetTransition();
   function ResetTransition() {
     devsect.style.transition = "none";
+    stylezic1.style.transition = "none";
+    stylezic2.style.transition = "none";
+    stylezic3.style.transition = "none";
+    stylezic4.style.transition = "none";
   }
 }
 
