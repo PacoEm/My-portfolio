@@ -1,0 +1,37 @@
+#section_contact{
+    width: 100vw;
+
+    background: black;
+}
+#contact_container{
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 90%;
+    margin: auto;
+}
+
+#contact_container p, #contact_container a{
+    margin-bottom: 3.5%;
+
+    font-family: mytext, serif;
+    font-size: calc(2.8rem + 1.2vw);
+    letter-spacing: 2px;
+
+    color: beige;
+}
+
+#idee{
+    margin-top: 8%;
+}
+#projet{
+}
+#letstalk{
+}
+#contact{
+    text-decoration-thickness: 2px;
+    text-underline-offset: 20%;
+    padding-bottom: 4%;
+}

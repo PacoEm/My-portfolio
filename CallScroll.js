@@ -8,7 +8,6 @@ const stylezic2 = document.getElementById("stylezic2");
 const stylezic3 = document.getElementById("stylezic3");
 const stylezic4 = document.getElementById("stylezic4");
 const compoh1 = document.getElementById("compo_h1");
-console.log(stylezic1);
 
 function CallScroll() {
   window.addEventListener("scroll", () => {
