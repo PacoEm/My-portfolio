@@ -6,10 +6,10 @@ function CallContact() {
 
   const SIZE_1 = "scale(1)";
   const SIZE_2 = "scale(1.1)";
-  const SHADOW_1 = "rgb(219, 180, 136)";
-  const SHADOW_2 = "beige";
+  const COLOR_1 = "orange";
+  const COLOR_2 = "beige";
 
-  const DELAY = 150;
+  const DELAY = 120;
 
   const TRANS = "0.2s ease-out";
 
@@ -20,32 +20,33 @@ function CallContact() {
 
   function Idee() {
     idee.style.transform = SIZE_2;
-    idee.style.color = SHADOW_1;
+    idee.style.color = COLOR_1;
+    contact.style.color = COLOR_2;
   }
   function Projet() {
     idee.style.transform = SIZE_1;
-    idee.style.color = SHADOW_2;
+    idee.style.color = COLOR_2;
 
-    projet.style.transform = SIZE_2;
-    projet.style.color = SHADOW_1;
+    projet.style.transform = "scale(1.12)";
+    projet.style.color = COLOR_1;
   }
   function Talk() {
     projet.style.transform = SIZE_1;
-    projet.style.color = SHADOW_2;
+    projet.style.color = COLOR_2;
 
-    talk.style.transform = SIZE_2;
-    talk.style.color = SHADOW_1;
+    talk.style.transform = "scale(1.14)";
+    talk.style.color = COLOR_1;
   }
   function Contact() {
     talk.style.transform = SIZE_1;
-    talk.style.color = SHADOW_2;
+    talk.style.color = COLOR_2;
 
-    contact.style.transform = SIZE_2;
-    contact.style.color = SHADOW_1;
+    contact.style.transform = "scale(1.16)";
+    contact.style.color = COLOR_1;
   }
   function End() {
     contact.style.transform = SIZE_1;
-    contact.style.color = SHADOW_2;
+    contact.style.color = COLOR_1;
   }
 
   function Int() {

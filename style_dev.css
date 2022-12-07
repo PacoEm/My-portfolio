@@ -1,5 +1,6 @@
 #section_dev{
     width: 100vw;
+    padding-bottom: 2.5%;
 
     color: beige;
     background-color: black;
@@ -41,7 +42,7 @@
     height: 100%;
 
 }
-#site_2{
+#site_2, #site_4{
     flex-direction: row-reverse;
 }
 
@@ -54,6 +55,9 @@
 }
 #site_3 .img_site{
     background: url(./assets/bacgrounds/carousselambra.jpg) center/cover no-repeat;
+}
+#site_4 .img_site{
+    background: url(./assets/bacgrounds/sonoa.jpg) center/cover no-repeat;
 }
 
 /* texts */
@@ -85,6 +89,10 @@
     padding: 0px 0px 0px 20px;
 }
 #site_2 .description_site p, #site_2 .description_site h2{
+    padding: 0px 20px 0px 0px;
+    text-align: right;
+}
+#site_4 .description_site p, #site_4 .description_site h2{
     padding: 0px 20px 0px 0px;
     text-align: right;
 }

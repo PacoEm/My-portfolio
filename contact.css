@@ -12,12 +12,15 @@
     width: 90%;
     margin: auto;
 }
+#contact_container h1{
+    font-family: myfont, serif;
+    font-size: calc(0.9rem + 2vw);
 
+}
 #contact_container p, #contact_container a{
-    margin-bottom: 3.5%;
+    margin-bottom: 2%;
 
     font-family: mytext, serif;
-    font-size: calc(2.8rem + 1.2vw);
     letter-spacing: 2px;
 
     color: beige;
@@ -25,13 +28,24 @@
 
 #idee{
     margin-top: 8%;
+    font-size: calc(1.2rem + 1.2vw);
 }
 #projet{
+    margin-top: -3px;
+    font-size: calc(1.4rem + 1.2vw);
 }
 #letstalk{
+    margin-top: 2px;
+    font-size: calc(1.6rem + 1.2vw);
 }
 #contact{
+    margin-top: 6px;
+    padding-bottom: 6%;
+
+    font-size: calc(1.8rem + 1.2vw);
     text-decoration-thickness: 2px;
     text-underline-offset: 20%;
-    padding-bottom: 4%;
+}
+#idee, #projet, #letstalk, #contact{
+    transform-origin: top;
 }
