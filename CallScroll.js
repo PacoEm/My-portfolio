@@ -8,6 +8,10 @@ const stylezic2 = document.getElementById("stylezic2");
 const stylezic3 = document.getElementById("stylezic3");
 const stylezic4 = document.getElementById("stylezic4");
 const compoh1 = document.getElementById("compo_h1");
+const idee = document.getElementById("idee");
+const projet = document.getElementById("projet");
+const talk = document.getElementById("letstalk");
+const contact = document.getElementById("contact");
 
 function CallScroll() {
   window.addEventListener("scroll", () => {
@@ -15,7 +19,16 @@ function CallScroll() {
     let Y_TITLE2 = compoh1.offsetTop - window.innerHeight / 1.5;
     let Y_TITLE3 = compoh1.offsetTop - window.innerHeight / 1.7;
     let Y_TITLE4 = compoh1.offsetTop - window.innerHeight / 1.9;
+
+    let Y_IDEE = idee.offsetTop - window.innerHeight + 60;
+
     const APP_TIME = 1;
+
+    projet.style.transition = "1s linear";
+    talk.style.transition = "1s linear";
+    contact.style.transition = "1s linear";
+
+    const CONTACT_TIME = "1.5";
 
     // -------------------------------------
     // scroll section dévelloppement
@@ -95,6 +108,24 @@ function CallScroll() {
       stylezic4.style.opacity = "0";
       stylezic4.style.transition = "0.5s ease";
     }
+
+    if (window.scrollY > Y_IDEE) {
+      idee.style.opacity = "1";
+      projet.style.transform = "translateY(7px)";
+      projet.style.opacity = "1";
+      talk.style.transform = "translateY(15px)";
+      talk.style.opacity = "1";
+      contact.style.transform = "translateY(22px)";
+      contact.style.opacity = "1";
+    } else if (window.scrollY < Y_IDEE) {
+      idee.style.opacity = "0";
+      projet.style.transform = "translateY(0px)";
+      projet.style.opacity = "0";
+      talk.style.transform = "translateY(0px)";
+      talk.style.opacity = "0";
+      contact.style.transform = "translateY(0px)";
+      contact.style.opacity = "0";
+    }
   });
 
   // -----------------------------------
@@ -109,6 +140,9 @@ function CallScroll() {
       stylezic2.style.transition = "none";
       stylezic3.style.transition = "none";
       stylezic4.style.transition = "none";
+      projet.style.transition = "none";
+      talk.style.transition = "none";
+      contact.style.transition = "none";
     },
     true
   );
@@ -119,6 +153,9 @@ function CallScroll() {
     stylezic2.style.transition = "none";
     stylezic3.style.transition = "none";
     stylezic4.style.transition = "none";
+    projet.style.transition = "none";
+    talk.style.transition = "none";
+    contact.style.transition = "none";
   }
 }
 
