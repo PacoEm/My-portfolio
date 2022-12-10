@@ -111,11 +111,11 @@ function CallScroll() {
 
     if (window.scrollY > Y_IDEE) {
       idee.style.opacity = "1";
-      projet.style.transform = "translateY(7px)";
+      projet.style.transform = "translateY(6px)";
       projet.style.opacity = "1";
-      talk.style.transform = "translateY(15px)";
+      talk.style.transform = "translateY(13px)";
       talk.style.opacity = "1";
-      contact.style.transform = "translateY(22px)";
+      contact.style.transform = "translateY(19px)";
       contact.style.opacity = "1";
     } else if (window.scrollY < Y_IDEE) {
       idee.style.opacity = "0";

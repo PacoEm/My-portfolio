@@ -1,0 +1,25 @@
+footer{
+    padding-bottom: 4%;
+    background: black;
+}
+footer p{
+    font-family: mytext, serif;
+    font-size: calc(0.5rem + 1vw);
+    text-align: center;
+    color: white;
+}
+#name{
+    color: rgb(239, 239, 209);
+}
+#front-end{
+    color: rgb(211, 136, 15);
+}
+#illustration{
+    color: rgb(190, 78, 78);
+}
+#composition{
+    color: rgb(140, 140, 213);
+}
+#mail{
+    color: rgb(165, 167, 196);
+}

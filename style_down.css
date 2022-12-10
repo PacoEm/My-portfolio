@@ -1,6 +1,6 @@
 
 /* ============================ */
-/* -------- down SECTION -------- */
+/* -------- down SECTION ------- */
 /* ============================ */
 #section_down{
     /* flex */
@@ -78,6 +78,19 @@
     transition-property: transform;
     transform: translateY(0px);
     opacity: 0.6;
-  }
+}
+
+/* ============================ */
+/* -------- responsive -------- */
+/* ============================ */
+@media (orientation: landscape){
+    #title_down{
+        opacity: 0;
+        text-shadow: none;
+    }
+    .item_down a{
+        height: 0px;
+    }
+}
 
 
