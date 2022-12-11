@@ -5,15 +5,16 @@ function CallClassic() {
 
   // the backgrounds of each div with the right path
   const imgs = [
+    "url(assets/imgs/img4.jpg)",
     "url(assets/imgs/img3.jpg)",
     "url(assets/imgs/img2.jpg)",
     "url(assets/imgs/img1.jpg)",
     "url(assets/imgs/img0.jpg)",
-    "url(assets/imgs/img4.jpg)",
+    "url(assets/imgs/img5.jpg)",
   ];
 
   // the display's duration for each image
-  const DURATION = 7;
+  const DURATION = 8;
 
   // the transition's duration
   const TRANSITION = 2;
@@ -53,9 +54,9 @@ function CallClassic() {
   }
   stl.push(TRANSITION + "s ease");
 
-  document.getElementById("c4").style.opacity = "0";
-  document.getElementById("c4").style.transition = "none";
-  document.getElementById("c4").style.transformProperty = "opacity";
+  document.getElementById("c5").style.opacity = "0";
+  document.getElementById("c5").style.transition = "none";
+  document.getElementById("c5").style.transformProperty = "opacity";
 
   // StyleTransitions manage z-index, opacity and the transition
   function StyleTransitions() {
