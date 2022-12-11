@@ -24,7 +24,7 @@ body{
     width: 100vw;
     height: 65vh;
 
-    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(5, 5, 5));
+    background: linear-gradient(180deg, rgb(37, 37, 37), rgb(0, 0, 0));
 }
 #container_down{
     z-index: 1;
@@ -34,9 +34,9 @@ body{
     height: 35vh;
     transform: translateY(65vh);
 
-    background: url(./assets/bacgrounds/ground_3.png) repeat-x;
+    /* background: url(./assets/bacgrounds/ground_3.png) repeat-x;
     background-position: bottom;
-    opacity: 0.5;
+    opacity: 0.5; */
 }
 header{
     width: 100vw;
