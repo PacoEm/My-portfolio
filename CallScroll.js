@@ -34,7 +34,7 @@ function CallScroll() {
     // -------------------------
     // scroll header for h1 down
     // -------------------------
-    if (window.scrollY > 300) {
+    if (window.scrollY > 150) {
       titledown.style.opacity = "0";
     } else if (window.scrollY < 300) {
       titledown.style.opacity = "1";
