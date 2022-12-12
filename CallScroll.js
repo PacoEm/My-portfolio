@@ -1,3 +1,4 @@
+const titledown = document.getElementById("title_down");
 const devsect = document.getElementById("section_dev");
 const title1 = document.getElementById("title1");
 const title2 = document.getElementById("title2");
@@ -30,9 +31,18 @@ function CallScroll() {
 
     const CONTACT_TIME = "1.5";
 
-    // -------------------------------------
+    // -------------------------
+    // scroll header for h1 down
+    // -------------------------
+    if (window.scrollY > 300) {
+      titledown.style.opacity = "0";
+    } else if (window.scrollY < 300) {
+      titledown.style.opacity = "1";
+    }
+
+    // -----------------------------
     // scroll section dévelloppement
-    // -------------------------------------
+    // -----------------------------
     if (window.scrollY > 600) {
       devsect.style.backgroundColor = "rgb(240, 235, 235)";
       devsect.style.color = "rgb(41, 38, 38)";
@@ -46,9 +56,6 @@ function CallScroll() {
     // --------------------------
     // scroll section composition
     // --------------------------
-
-    // scroll h1
-
     // scroll title1
     if (window.scrollY > Y_TITLE1) {
       title1.style.width = "60%";
@@ -109,6 +116,9 @@ function CallScroll() {
       stylezic4.style.transition = "0.5s ease";
     }
 
+    // ----------------------
+    // scroll section contact
+    // ----------------------
     if (window.scrollY > Y_IDEE) {
       idee.style.opacity = "1";
       projet.style.transform = "translateY(6px)";
