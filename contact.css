@@ -49,3 +49,20 @@
 #idee, #projet, #letstalk, #contact{
     transform-origin: top;
 }
+
+/* ========== */
+/* RESPONSIVE */
+/* ========== */
+@media screen and (max-width: 585px){
+    #contact{
+        padding-bottom: 70px;
+    }
+}
+@media screen and (max-width: 450px){
+    #idee{
+        margin-top: 55px;
+    }
+    #contact{
+        padding-bottom: 55px;
+    }
+}
