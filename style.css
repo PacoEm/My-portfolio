@@ -45,3 +45,7 @@ header{
 #section_dev h1, #linkClassic h1, #sites h2{
     font-family: myfont, serif;
 }
+.chiffres{
+    margin-left: 3px;
+    font-family: mytext, serif;
+}
